@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fabrics",
+  "info": {
+    "singularName": "fabric",
+    "pluralName": "fabrics",
+    "displayName": "Fabric",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "fabric"
+    }
+  }
+}
